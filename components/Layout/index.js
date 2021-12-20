@@ -1,10 +1,10 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import { Fragment } from 'react';
 import Footer from '../footer';
 
-function Layout () {
+function Layout() {
   return (
-
-    <Footer />
+      <Footer />
 
   );
 };

@@ -4,6 +4,7 @@ import styles from '../styles/Homee.module.css';
 import Navvbar from '../components/navvbar';
 import { useRouter } from 'next/router';
 import NavbarUser from '../components/NavbarUser';
+import Layout from '../components/layout';
 // import Layout from '../components/layout/layout';
 
 export default function Home() {
@@ -46,6 +47,7 @@ export default function Home() {
           </Center>
         </WrapItem>
       </Wrap>
+      <Layout/>
     </div>
   );
 }

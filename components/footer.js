@@ -1,15 +1,15 @@
-import styles from '../styles/footer.module.css';
+
 import Link from 'next/link';
-import { Stack, Center, Container } from '@chakra-ui/layout';
+import { Stack, Center, Container, ChakraProvider } from '@chakra-ui/layout';
 
 
 
-const Footer = (props) => {
+
+const Footer = () => {
   return (
-    <Container className={styles.foot}>
+
+    <Container className={'#'}>
       <Center>
-
-
         <Stack direction={'row'}
           justifyContent={'space-evenly'}
           spacing={'60px'}
