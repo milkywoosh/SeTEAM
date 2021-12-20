@@ -66,7 +66,7 @@ function Dashboard() {
                   <Link display={['none', 'none', 'flex', 'flex', 'flex']}>
                     <Icon as={FiBook} fontSize='2xl' />
                   </Link>
-                  <Link href='/AvailableCourses' _hover={{ textDecor: 'none' }} display={['flex', 'flex', 'none', 'flex', 'flex']}>
+                  <Link href="/AvailableCourses" _hover={{ textDecor: 'none' }} display={['flex', 'flex', 'none', 'flex', 'flex']}>
                     <Text ml={3}>Other Courses</Text>
                   </Link>
                 </Flex>
@@ -80,9 +80,10 @@ function Dashboard() {
                 </Flex>
               </Flex>
             </Flex>
-            <Flex flexDir='column' alignItems='center' mb={10} mt={5}>
-              <Avatar my={2} src='#' />
-              <Text textAlign='center'>TEST REDUX</Text>
+
+            <Flex flexDir="column" alignItems="center" mb={10} mt={5}>
+              <Avatar my={2} src="#" />
+              <Text textAlign="center">TEST REDUX</Text>
             </Flex>
           </Flex>
         </Flex>

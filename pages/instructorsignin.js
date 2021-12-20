@@ -74,7 +74,8 @@ export default function Signin() {
                 <FormLabel padding='3px' ><Center>Password</Center></FormLabel>
                 <Input type='password' placeholder='Password' ref={passwordRef} w='250px' isRequired />
               </FormControl>
-              <Button onClick={handleSubmit} mt={5} colorScheme='teal' mr='4' h='30px' w='70px' className={styles.btn} >
+
+              <Button onClick={handleSubmit} mt={5} colorScheme="teal" mr="4" h="30px" w="70px" className={styles.btn} >
                 Sign In
               </Button>
             </form>

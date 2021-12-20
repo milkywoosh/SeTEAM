@@ -83,9 +83,9 @@ function AddNewVideoForm(props) {
           <input type='text' required id='email-instructor' ref={email} />
         </div>
         <div className={classes.control}>
-          <label htmlFor='id-video'>Upload Video to Cloudinary</label>
-          {/* <input type='file' required id='id-video' ref={idVideo} /> */}
-          <input type='file'
+          <label htmlFor="id-video">Upload Video to Cloudinary</label>
+          {/* <input type="file" required id="id-video" ref={idVideo} /> */}
+          <input type="file"
             onChange={(event) => {
               setVidSelected(event.target.files[0]);
               

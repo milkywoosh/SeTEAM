@@ -1,25 +1,25 @@
 
-import { useState } from "react";
+import { useState } from 'react';
 
 function UploadCldForm() {
   // const data_cloud_name = ${process.env.NEXT_CLDNRY_cloud_name}
-  const [imageSelected, setImageSelected] = useState("");
+  const [imageSelected, setImageSelected] = useState('');
   function UploadingFiles () {
     // console.log(files)
     const formData = new FormData();
-    formData.append("file", imageSelected);
-    formData.append("upload_preset", bqvneyqd);
+    formData.append('file', imageSelected);
+    formData.append('upload_preset', bqvneyqd);
     // problem, data kredensial terlalu terexpose !!!!!!
-    const address = "https://api.cloudinary.com/v1_1/di1kxmnrn/image/upload";
+    const address = 'https://api.cloudinary.com/v1_1/di1kxmnrn/image/upload';
     fetch(address, {
-      method: "POST", // or "PUT",
+      method: 'POST', // or 'PUT',
       body: formData,
     })
       .then(data => {
-        console.log("success: ", data);
+        console.log('success: ', data);
       })
       .catch((error) => {
-        console.log("error: ", error);
+        console.log('error: ', error);
       });
   }
   return (
