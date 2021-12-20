@@ -9,7 +9,8 @@ export default  function Navvbar() {
   const user =  firebase.auth().currentUser;
   return (
     <>
-      <Box data-testid='navbar-home'  px={4}>
+      <Box data-testid="navbar-home"  px={4}>
+
         <Flex h={10} alignItems={'center'} justifyContent={'center'}>
           <HStack spacing={8} alignItems={'right'}>
             <Text fontSize='20px' fontWeight='' > {

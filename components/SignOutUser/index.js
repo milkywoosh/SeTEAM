@@ -8,6 +8,7 @@ const SignOutUser = () => {
 
   // const [signedUser, setSignedUser] = useState('');
 
+
   const HandleSignOut = (e) => {
     e.preventDefault();
     // signout from firebase 
