@@ -1,6 +1,6 @@
 import CoursesData from '../components/CoursesData';
 import { useState, useEffect } from 'react';
-
+import Simple from '../components/navbardashboard';
 import Footer from '../components/footer';
 
 export default function AvailableCourses() {
@@ -35,7 +35,7 @@ export default function AvailableCourses() {
   return (
     <>
       <section>
-        
+        <Simple/>
         <CoursesData availVideos={loadedCourses} />
         <Footer/>
       </section>

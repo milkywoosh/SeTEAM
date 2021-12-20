@@ -15,8 +15,6 @@ import { cld } from '../config/cloudinary';
 import { scale } from '@cloudinary/url-gen/actions/resize';
 import { useRouter } from 'next/router';
 import Footer from '../components/footer';
-import Layout from '../components/layout/layout';
-
 function CoursePage(props) {
   const { url } = props;
   const themeColor = '#B2F5EA';

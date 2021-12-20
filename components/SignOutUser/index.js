@@ -1,12 +1,12 @@
-import { Button } from "@chakra-ui/react";
+import { Button } from '@chakra-ui/react';
 
-import firebase from "../../config/firebase";
+import firebase from '../../config/firebase';
 const firebaseAuth = firebase.auth();
-import { useState } from "react";
+import { useState } from 'react';
 
 const SignOutUser = () => {
 
-  // const [signedUser, setSignedUser] = useState("");
+  // const [signedUser, setSignedUser] = useState('');
 
   const HandleSignOut = (e) => {
     e.preventDefault();
@@ -15,9 +15,9 @@ const SignOutUser = () => {
     if (firebaseAuth.currentUser) {
       firebase.auth().signOut().then(() => {
         // Sign-out successful.
-        alert("You have signed out");
-        localStorage.removeItem("uid");
-        localStorage.removeItem("displayName");
+        alert('You have signed out');
+        localStorage.removeItem('uid');
+        localStorage.removeItem('displayName');
         window.location.reload();
       }).catch((error) => {
         // An error happened.
@@ -28,8 +28,8 @@ const SignOutUser = () => {
   };
   return (
     <Button
-      as={Button} rounded={"full"} variant={"solid"}
-      cursor={"pointer"} minW={0} spacing={3} right={2}
+      as={Button} rounded={'full'} variant={'solid'}
+      cursor={'pointer'} minW={0} spacing={3} right={2}
       onClick={HandleSignOut}>Sign Out</Button>
   );
 };
